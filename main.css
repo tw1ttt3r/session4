@@ -1,0 +1,57 @@
+/* Reinicio del modelo de cajas */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Configuración del contenedor flex */
+#container {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  /* direction wrap */
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  height: 600px;
+  background-color: beige;
+  border: 2px solid black;
+}
+
+#container div {
+  width: 40px;
+  height: 40px;
+  background-color: cadetblue;
+}
+
+/* Navbar */
+
+#navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: azure;
+}
+
+#navegacion > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#navegacion > ul > li {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+}
+
+#navegacion > ul > li:hover {
+  background-color: black;
+  color: red;
+  cursor: pointer;
+}
