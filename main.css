@@ -9,6 +9,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 
@@ -130,7 +131,7 @@ main {
   "imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 . . imagen6 imagen6 imagen6 imagen6 imagen6 imagen6 imagen6 imagen6"
   "imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 imagen5 . . imagen6 imagen6 imagen6 imagen6 imagen6 imagen6 imagen6 imagen6"
   ". . . . . . . . . . . . . . . . . .";
-  width: 600px;
+  width: 380px;
   height: 600px;
 }
 
@@ -156,4 +157,48 @@ main {
 }
 #imagen6 {
   grid-area: imagen6;
+}
+
+
+/* media queries; definen configuraciones de estilos dependiendo de un rango de resoluciones (min px - max px) */
+/* breakpoints: son un rango de resoluciones (min px - max px) */
+
+
+/* mobile first */
+/* mis dispositivos mobiles siempre partiran de 400px minimo */
+
+/* mobiles - celulares */
+/* celulares: min 400px - default de 400px hasta 719px*/ 
+/* tablets: 720px de 720px hasta 1023px */
+/* desktop: 1024px de 1024 hasta 1199px */
+/* pantallas: 1200px*/
+
+/* @media all {
+  
+}
+@media print {
+  
+} */
+
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  #galeria {
+    width: 719px;
+    background-color: aquamarine;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #galeria {
+    width: 1023px;
+  }
+  #imagen3 {
+    grid-area: imagen4;
+  }
+  #imagen4 {
+    grid-area: imagen3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #galeria {
+    width: 1200px;
+  }
 }
