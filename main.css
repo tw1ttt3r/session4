@@ -67,42 +67,22 @@ main {
 }
 
 #hijo1 {
-  /* grid-column-start: 8;
-  grid-column-end: 9;
-  grid-row-start: 2;
-  grid-row-end: 3; */
   grid-area: hijo1;
   background-color: antiquewhite;
 }
 #hijo2 {
-  /* grid-column-start: 6;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 2; */
   grid-area: hijo2;
   background-color: aquamarine;
 }
 #hijo3 {
-  /* grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2; */
   grid-area: hijo3;
   background-color: blueviolet;
 }
 #hijo4 {
-  /* grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3; */
   grid-area: hijo4;
   background-color: cadetblue;
 }
 #hijo5 {
-  /* grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 3; */
   grid-area: hijo5;
   background-color: tomato;
 }
@@ -179,26 +159,3 @@ main {
 @media print {
   
 } */
-
-@media screen and (min-width: 720px) and (max-width: 1023px) {
-  #galeria {
-    width: 719px;
-    background-color: aquamarine;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-  #galeria {
-    width: 1023px;
-  }
-  #imagen3 {
-    grid-area: imagen4;
-  }
-  #imagen4 {
-    grid-area: imagen3;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #galeria {
-    width: 1200px;
-  }
-}

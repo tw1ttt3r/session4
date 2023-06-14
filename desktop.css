@@ -1,0 +1,9 @@
+#galeria {
+  width: 1023px;
+}
+#imagen3 {
+  grid-area: imagen4;
+}
+#imagen4 {
+  grid-area: imagen3;
+}
